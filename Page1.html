@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    .header{
+        height: 110vh;
+        width: 100%;
+     background-image: url(./back.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    }
+    .side-nav{
+        height: 110%;
+        width: 110px;
+        position: fixed;
+        top: 0;
+        left:0;
+        padding: 30px 15px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        transition: width 0.5s;
+    }
+    .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60px;
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .user div{
+        display: none;
+    }
+    .user h2{
+        font-size: 15px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .user-img{
+        width: 40px;
+        border-radius: 50%;
+        margin: auto;
+    }
+    ul{
+        list-style: none;
+        padding: 0 15px;
+    }
+    ul li{
+       margin: 30px 0;
+       display: flex;
+       align-items: center;
+       justify-content: flex ;
+       cursor: pointer;
+    }
+    .im{
+        width: 30px;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+     li{
+        display: none;
+    }
+    ul li img{
+        width: 30px;
+        margin-right: 0px;
+        border-radius: 50%;
+       color: black;
+    }
+    ul li p{
+        white-space: nowrap;
+        display: none;
+        padding: 5px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+    }
+    .side-nav:hover{
+        width: 250px;
+    }
+    .side-nav:hover .user div{
+        display: block;
+    }
+    .side-nav:hover .user{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+    }
+    .side-nav:hover .user-img{
+        margin: 0;
+    }
+    .side-nav:hover ul li p{
+       display: block;
+    }
+    .side-nav:hover ul li img{
+        margin-right: 10px;
+    }
+    .side-nav:hover ul li{
+        justify-content: flex-start;
+    }
+    .search{
+          margin-top: -620px;  
+          
+        }
+    input{
+            height:40px;
+            width:350px;
+            margin-left: 260px;
+            border-radius: 20px; 
+         }
+         .icon{
+            margin-left: 550px;
+            margin-top: -30px;  
+         }
+         .hOne{
+            margin-left: 300px;
+            margin-top: -250px;
+        }
+        button{
+            padding: 20px;
+            width: 40%;
+            border-radius: 15px;
+            background-color: transparent;
+            font-size: 20px;
+
+         }
+         button:hover{
+            cursor: pointer;
+            color: black;
+            transition: 2s;
+            background-color: crimson;
+             scale: 1.2s;
+            
+         }
+         .h{
+            font-size: 18px;
+         }
+         .i{
+            font-size: 22px;
+         }
+         .e1{
+            font-size: 35px;
+         }
+         .hTwo{
+            margin-top: 40px;
+            margin-left: 850px;
+         }
+         .in{
+            border-radius: 50%; 
+         }
+         .log{
+            height: 20px;
+            width: 40%;
+            color: wheat;
+           margin-top: -40px;
+            
+            
+         }
+         .lg{
+            margin-left: 900px;
+            margin-top: -200px;
+        }
+         .gn{
+            margin-left: 1000px;
+            margin-top: -60px;
+         }
+         .nh {
+            display: flex;
+            align-items: center;
+            margin-left: 1070px;
+            justify-content: space-around;
+            margin-top: -30px;
+         }
+         .go{
+            color: wheat;
+         }
+         .c11{
+            border-radius: 80%;
+         }
+        
+</style>
+   
+</head>
+<body>
+    <div class="header">
+        <div class="side-nav">
+            <div class="user">
+                <img src="./w12 - Copy.jpg" alt="" class="user-img"  >
+                <div >
+                <h2>JAYASHREE K R</h2>
+                <p>jayashreekr1306@gmail.com</p>
+                </div>
+                </div>
+                <ul>
+                   <li class="One"><img src="./ho.png" alt=""><p>Home</p></li>
+                   <li><img src="./au.png" alt=""><p>About Us</p></li>
+                   <li><img src="./se.png" alt=""><p>Services</p></li>
+                   <li><img  class="im" src="./em.png" alt="" ><p>Contact</p></li>
+                   <li><img src="./n1.jpeg" alt="" ><p> Notification</p></li>
+                   <li><img src="./or.png" alt=""><p>Order</p></li>
+                   <li><img src="./ss.png" alt=""><p>Settings</p></li>
+                   <li><img src="./lo.png" alt=""><p>Logout</p></li>
+            </div>
+        </div>
+    </div>
+    <section class="hPage"> <br><br>
+        <div class="search">
+        <input type="text" placeholder="search....." >
+        <div class="icon">
+        <img  src="./s1.png" alt="" width="30px" height="20px">
+        </div>
+        </div>
+         <div class="log"><br>
+            <label class="lg"><a href="./Log.html"><b>LogIn</b></a></label>
+            </div>
+            <div class="go">
+            <label class="gn"><a href="./Signup.html"><b>SignUp</b></a></label>
+            </div>
+            <div class="nh">
+            <a href="./Cart.html"><img class="c11"src="./cart1.png" alt="" height="40px"></a>
+            <a href="./profile.html"><img class="c11" src="./pro.png" alt=""  height="40px"></a>
+         </div>
+        </div>
+        <div class="hTwo"><br><br>
+            <img class="in" src="./w12 - Copy.jpg" alt="" height="300px" width="300px">
+        </div>
+       
+        <div class="hOne"><br><br>
+            <h1 class="e1">SHOP ONLINE</h1><br>
+            <h3 class="i"><i>Made Easy!</i></h3><br>
+            <p class="h"><b>Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam,quis nostrud exercitation. </b></p><br>
+            <button><a href="./shop.html">Shop Now</a></button>
+        </div>
+</body>
+</html>

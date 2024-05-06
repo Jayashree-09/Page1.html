@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        /* background-color: grey; */
+        background-image: url(./back.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        height: 400px;
+        width: 30%;
+        margin-left: 300px;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black ;
+        border-bottom:1px solid black ;
+        border-radius: 20px;
+        /* width: 100%; */
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            margin-left: 600px;
+    }
+    h2{
+        color: white;
+        margin-left: 35px;
+    }
+    .bd{
+        height: 20px;
+        width: 30%;
+        padding: 10px;
+        width: 60%;
+        margin-left: 30px;
+        border-radius: 10px;
+    }
+
+    input{
+        margin-left: 20px;   
+    }
+    button{
+        margin-left: 55px;
+        padding: 12px;
+        width: 70%;
+        border-radius: 8px;
+        font-size: 17px;
+    }
+    label{
+        margin-left: 20px;
+    }
+    .am{
+        margin-left: 20px;
+    }
+    button:hover{
+        background-color: black;
+        color: white;
+        transition: 2s;
+    }
+    .bu1{
+        width: 10%;
+        padding: 10px;
+        margin-left: 40px;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<body><br><br>
+    <button class="bu1"><a href="./Page1.html">Back</a></button> 
+    <main><br>
+        <h2>Existing User Login Here</h2><br>
+      <input  class="bd" type="text" placeholder="Email"><br><br>
+      <input   class="bd" type="password" placeholder="Password"><br><br>
+      <input type="checkbox" style="color:white">Remember Me 
+      <button>Login</button> <br><br>
+      <label>forgot password click?<a href="">Here</a></label><br><br>
+      <label>New User Register Here <a href="">Register Now</a></label><br><br>
+      <a class="am" href="./Signup.html">Click Here To Signup</a>
+    </main>
+</body>
+</html>
